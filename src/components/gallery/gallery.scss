@@ -1,0 +1,39 @@
+.gallery {
+  .col-sm-5 .gallery__item {
+    aspect-ratio: 302/358;
+  }
+  .col-6 .gallery__item {
+    aspect-ratio: 193/158;
+  }
+  &__item {
+    display: block;
+    width: 100%;
+    position: relative;
+    border-radius: 16px;
+    overflow: hidden;
+    &:hover img {
+      transform: scale(1.05);
+    }
+    img {
+      width: 100%;
+      height: 100%;
+      object-fit: cover;
+      transition: all 0.3s;
+    }
+  }
+  &__item-num {
+    position: absolute;
+    background: rgba(0, 0, 0, 0.6);
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    width: 100%;
+    height: 100%;
+    left: 0;
+    top: 0;
+    .h2 {
+      line-height: 95%;
+    }
+  }
+}

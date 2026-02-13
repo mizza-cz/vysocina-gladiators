@@ -1,0 +1,19 @@
+/*! purgecss start ignore */
+
+.breadcrumb {
+  --bs-breadcrumb-item-padding-x: 1rem;
+}
+.breadcrumb-item + .breadcrumb-item:before {
+  color: var(--color-text-secondary);
+}
+.breadcrumb-item {
+  font-weight: 400;
+  font-size: 12px;
+  line-height: 15px;
+  letter-spacing: -0.05em;
+  color: var(--color-accent);
+}
+.breadcrumb-item.active {
+  color: var(--color-text-secondary);
+}
+/*! purgecss end ignore */

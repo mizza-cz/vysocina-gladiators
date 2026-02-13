@@ -1,0 +1,687 @@
+<!DOCTYPE html>
+<html lang="cs-CZ">
+
+<head>
+	<meta charset="utf-8" />
+	<title>03.0_static - Vysočina Gladiators</title>
+	<meta name="viewport" content="width=device-width, initial-scale=1.0, shrink-to-fit=no" />
+	<meta name="format-detection" content="telephone=no" />
+
+	<!--****** Favicon ******-->
+	<link rel="icon" type="image/png" href="favicon/favicon-96x96.png" sizes="96x96" />
+	<link rel="icon" type="image/svg+xml" href="favicon/favicon.svg" />
+	<link rel="shortcut icon" href="favicon/favicon.ico" />
+	<link rel="apple-touch-icon" sizes="180x180" href="favicon/apple-touch-icon.png" />
+	<link rel="manifest" href="favicon/site.webmanifest" />
+	<!--****** Fonts ******-->
+	<link rel="preconnect" href="https://fonts.googleapis.com" />
+	<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+	<link href="https://fonts.googleapis.com/css2?family=Fira+Sans+Condensed:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&family=Fira+Sans+Extra+Condensed:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&family=Fira+Sans:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap" rel="stylesheet" />
+	<!--****** Styles  ******-->
+	<link rel="preload" href="css/styles.css" as="style" />
+	<link rel="stylesheet" media="screen, handheld" href="css/styles.css" />
+	<link rel="stylesheet" media="print" href="css/prints.css" />
+	<!--****** Styles  ******-->
+
+	<!--****** Scripts  ******-->
+	<link rel="preload" href="https://code.jquery.com/jquery-3.6.0.min.js" as="script" crossorigin />
+	<link rel="preload" href="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/js/bootstrap.bundle.min.js" as="script" crossorigin />
+	<link rel="preload" href="js/scripts.js" as="script" />
+	<!-- ****** scripts ****** -->
+</head>
+
+<body>
+	<div class="base">
+		<header class="header">
+			<div class="container">
+				<div class="header__inner">
+					<a href="#" class="header__logo d-xl-none d-block">
+						<img src="images/content/logo-mobile.png" alt="logo" />
+					</a>
+					<div class="d-xl-none d-flex gap-md-8 gap-0">
+						<a class="nav-link text-primary p-4" href="#">vstupenky</a>
+						<a class="nav-link text-primary p-4" href="#">E-shop</a>
+					</div>
+					<nav class="collapse navbar-collapse" id="navbarNavDropdown">
+						<ul class="navbar-nav">
+							<li class="nav-item dropdown">
+								<a class="nav-link dropdown-toggle" href="#" role="button" data-bs-toggle="dropdown" data-bs-auto-close="outside" aria-expanded="false">
+									Klub
+								</a>
+								<div class="dropdown-menu">
+									<div class="container">
+										<ul class="dropdown-list">
+											<li>
+												<a class="dropdown-item" href="#">Vedení a kontakty</a>
+											</li>
+											<li>
+												<a class="dropdown-item" href="#">Historie </a>
+											</li>
+											<li>
+												<a class="dropdown-item" href="#">Síň slávy </a>
+											</li>
+											<li>
+												<a class="dropdown-item" href="#">Vizuální identita </a>
+											</li>
+											<li>
+												<a class="dropdown-item" href="#">Glads pomáhají </a>
+											</li>
+											<li>
+												<a class="dropdown-item" href="#">Stadion </a>
+											</li>
+											<li>
+												<a class="dropdown-item" href="#">Akreditace </a>
+											</li>
+											<li>
+												<a class="dropdown-item" href="#">GDPR </a>
+											</li>
+										</ul>
+									</div>
+								</div>
+							</li>
+							<li class="nav-item dropdown">
+								<a class="nav-link dropdown-toggle" href="#" role="button" data-bs-toggle="dropdown" data-bs-auto-close="outside" aria-expanded="false">
+									A-tým
+								</a>
+								<div class="dropdown-menu">
+									<div class="container">
+										<ul class="dropdown-list">
+											<li>
+												<a class="dropdown-item" href="#">Soupiska</a>
+											</li>
+											<li>
+												<a class="dropdown-item" href="#">Zápasy </a>
+											</li>
+											<li>
+												<a class="dropdown-item" href="#">Tabulka </a>
+											</li>
+											<li>
+												<a class="dropdown-item" href="#">Statistiky </a>
+											</li>
+											<li>
+												<a class="dropdown-item" href="#">Realizační tým </a>
+											</li>
+											<li>
+												<a class="dropdown-item" href="#">Změny v kádru </a>
+											</li>
+										</ul>
+									</div>
+								</div>
+							</li>
+							<li class="nav-item dropdown">
+								<a class="nav-link dropdown-toggle" href="#" role="button" data-bs-toggle="dropdown" data-bs-auto-close="outside" aria-expanded="false">
+									Mládež
+								</a>
+								<div class="dropdown-menu">
+									<div class="container">
+										<ul class="dropdown-list">
+											<li>
+												<a class="dropdown-item" href="#">Tackle U21</a>
+											</li>
+											<li>
+												<a class="dropdown-item" href="#">Tackle U18 </a>
+											</li>
+											<li>
+												<a class="dropdown-item" href="#">Flag U15 </a>
+											</li>
+											<li>
+												<a class="dropdown-item" href="#">Realizační týmy </a>
+											</li>
+											<li>
+												<a class="dropdown-item" href="#">Nábor hráčů </a>
+											</li>
+										</ul>
+									</div>
+								</div>
+							</li>
+							<li class="nav-item">
+								<a class="nav-link" href="#">vstupenky</a>
+							</li>
+						</ul>
+						<a href="#" class="header__logo d-xl-block d-none">
+							<img src="images/content/logo.png" alt="logo" />
+						</a>
+						<ul class="navbar-nav">
+							<li class="nav-item">
+								<a class="nav-link" href="#">E-shop</a>
+							</li>
+							<li class="nav-item dropdown">
+								<a class="nav-link dropdown-toggle" href="#" role="button" data-bs-toggle="dropdown" data-bs-auto-close="outside" aria-expanded="false">
+									Média
+								</a>
+								<div class="dropdown-menu">
+									<div class="container">
+										<ul class="dropdown-list">
+											<li>
+												<a class="dropdown-item" href="#" target="_blank">Facebook
+												</a>
+											</li>
+											<li>
+												<a class="dropdown-item" href="#" target="_blank">Instagram
+												</a>
+											</li>
+											<li>
+												<a class="dropdown-item" href="#">Glads v repre </a>
+											</li>
+											<li>
+												<a class="dropdown-item" href="#">Archiv článků </a>
+											</li>
+											<li>
+												<a class="dropdown-item" href="#" target="_blank">CAAF.cz
+												</a>
+											</li>
+										</ul>
+									</div>
+								</div>
+							</li>
+							<li class="nav-item dropdown">
+								<a class="nav-link dropdown-toggle" href="#" role="button" data-bs-toggle="dropdown" data-bs-auto-close="outside" aria-expanded="false">
+									Fanzone
+								</a>
+								<div class="dropdown-menu">
+									<div class="container">
+										<ul class="dropdown-list">
+											<li>
+												<a class="dropdown-item" href="#">Fotogalerie </a>
+											</li>
+											<li>
+												<a class="dropdown-item" href="#">Video </a>
+											</li>
+											<li>
+												<a class="dropdown-item" href="#">Ke stažení </a>
+											</li>
+											<li>
+												<a class="dropdown-item" href="#">JCA Legends </a>
+											</li>
+											<li>
+												<a class="dropdown-item" href="#">Maskot MAX </a>
+											</li>
+											<li>
+												<a class="dropdown-item" href="#">Gameday </a>
+											</li>
+										</ul>
+									</div>
+								</div>
+							</li>
+							<li class="nav-item dropdown">
+								<a class="nav-link dropdown-toggle" href="#" role="button" data-bs-toggle="dropdown" data-bs-auto-close="outside" aria-expanded="false">
+									Partneři
+								</a>
+								<div class="dropdown-menu">
+									<div class="container">
+										<ul class="dropdown-list">
+											<li>
+												<a class="dropdown-item" href="#">Partneři </a>
+											</li>
+											<li>
+												<a class="dropdown-item" href="#">Spolupráce </a>
+											</li>
+											<li>
+												<a class="dropdown-item" href="#">Ke stažení </a>
+											</li>
+											<li>
+												<a class="dropdown-item" href="#">JCA Legends </a>
+											</li>
+											<li>
+												<a class="dropdown-item" href="#">Maskot MAX </a>
+											</li>
+											<li>
+												<a class="dropdown-item" href="#">Gameday </a>
+											</li>
+										</ul>
+									</div>
+								</div>
+							</li>
+						</ul>
+					</nav>
+					<button class="c-header__opener js-header__opener" type="button">
+						<span></span>
+					</button>
+				</div>
+			</div>
+		</header>
+		<main class="main" aria-label="Hlavní obsah">
+
+			<section class="pb-sm-16 pb-10 article-section bg-inverse">
+				<div class="pt-29 bg-static">
+					<div class="container position-relative z-2">
+						<nav class="mb-10" aria-label="breadcrumb">
+							<ol class="breadcrumb">
+								<li class="breadcrumb-item">
+									<a class="hover-outline" href="#">Home</a>
+								</li>
+
+								<li class="breadcrumb-item active" aria-current="page">
+									Obecná podstránka
+								</li>
+							</ol>
+						</nav>
+						<h1 class="h2 text-primary mb-lg-6 mb-4">Headline</h1>
+						<ul class="tags text-regular-sm text-secondary mb-lg-11 mb-8">
+							<li>A-tým</li>
+							<li>5. ledna 2025</li>
+							<li>Karel Novotný</li>
+						</ul>
+					</div>
+				</div>
+
+				<div class="container-xs px-md-6 px-4 position-relative z-2">
+					<div class="o-content text-primary">
+						<div class="perex">
+							Oddechl si. A pořádně. Takovou kliku Přední Kopanina ve čtvrté lize
+							potřebovala. K výhře 1:0 nad Spoji, městským rivalem, došel tým od
+							letiště díky vlastnímu gólu soupeře. Padl po rohovém kopu střídajícího
+							Sebastiana Razetta, kdy míč nešťastně tečoval Vonášek ze Spojů. Hráč s
+							číslem 77, to vše v 77. minutě... „Hlavně, že to tam spadlo,“ usmál se
+							Razzeto v rozhovoru pro fotbalpraha.cz.
+						</div>
+						<p>
+							Oddechl si. A pořádně. Takovou kliku Přední Kopanina ve čtvrté lize
+							potřebovala. K výhře 1:0 nad Spoji, městským rivalem, došel tým od
+							letiště díky vlastnímu gólu soupeře.
+						</p>
+						<p>
+							Oddechl si. A pořádně. Takovou kliku Přední Kopanina ve čtvrté lize
+							potřebovala. K výhře 1:0 nad Spoji, městským rivalem, došel tým od
+							letiště díky vlastnímu gólu soupeře. Padl po rohovém kopu střídajícího
+							Sebastiana Razetta, kdy míč nešťastně tečoval Vonášek ze Spojů. Hráč s
+							číslem 77, to vše v 77. minutě... „Hlavně, že to tam spadlo,“ usmál se
+							Razzeto v rozhovoru pro fotbalpraha.cz.
+						</p>
+						<p>
+							Padl po rohovém kopu střídajícího Sebastiana Razetta, kdy míč nešťastně
+							tečoval Vonášek ze Spojů. Hráč s číslem 77, to vše v 77. minutě...
+							„Hlavně, že to tam spadlo,“ usmál se Razzeto v rozhovoru pro
+							fotbalpraha.cz.
+						</p>
+						<hr />
+						<h6>Historie</h6>
+						<h5>Výsledky zde:</h5>
+						<ul>
+							<li>Na výsadbu tak půjde jeden milion korun</li>
+							<li>
+								<a href="#">Na výsadbu tak půjde </a>
+							</li>
+							<li>Na výsadbu tak půjde jeden milion korun</li>
+							<li>Na výsadbu tak půjde</li>
+							<li>Na výsadbu tak půjde jeden milion korun</li>
+							<li>Na výsadbu tak půjde</li>
+						</ul>
+						<hr />
+						<p>
+							Tým Přední Kopanina se tak posunul na druhé místo v tabulce, což jim
+							dává naději na postup do vyšší soutěže. Vyrovnaný výkon a odhodlání
+							hráčů byly klíčové, a fanoušci na stadionu mohli slavit cenné tři body.
+						</p>
+						<p>
+							Po vítězném utkání vyjádřil trenér mužstva spokojenost s výkonem celého
+							týmu a zdůraznil, že každý zápas je důležitý pro konečné umístění.
+							„Musíme i nadále makat a nezapomínat na naše cíle,“ dodal s úsměvem.
+						</p>
+						<p>
+							Fanoušci se také shodli na tom, že klíčovým hráčem byl brankář, který v
+							závěrečných minutách zlikvidoval několik nebezpečných střel soupeře.
+							Přední Kopanina si tak upevnila pozici v soutěži a může s optimismem
+							hledět do budoucna.
+						</p>
+						<img src="https://picsum.photos/1392/704" alt="Hero section image" width="100%" height="auto" loading="lazy" class="rounded-16 object-fit-cover" />
+						<p>
+							Další zápas je naplánován na neděli a tým se chystá na těžkého soupeře z
+							prvního místa. Očekává se, že fanoušci opět zaplní stadion a podpoří své
+							hráče v klíčovém duelu.
+						</p>
+						<p>
+							Trenér zdůraznil potřebu udržet si dobrou formu a přistoupit k zápasu s
+							plným nasazením. „Každý bod se počítá a my jsme připraveni bojovat,“
+							prohlásil na tiskové konferenci před zápasem.
+						</p>
+						<p>
+							Všichni hráči jsou v dobrém rozpoložení a tým věří, že pokud budou
+							pokračovat v dobrých výkonech, mohou se dostat na vrchol tabulky a
+							splnit si své ambice.
+						</p>
+					</div>
+					<div class="gallery mt-10">
+						<div class="row g-4">
+							<div class="col-sm-5">
+								<a class="gallery__item" href="#" data-source="/vysocina-gladiators/build/ajax-gallery.json" data-gallery-id="1">
+									<img srcset="https://picsum.photos/302/340" alt="photo" width="302" height="340" loading="lazy" />
+								</a>
+							</div>
+							<div class="col-sm-7">
+								<div class="row g-4">
+									<div class="col-6">
+										<a class="gallery__item" href="#" data-source="/vysocina-gladiators/build/ajax-gallery.json" data-gallery-id="1">
+											<img srcset="https://picsum.photos/193/158" alt="photo" width="193" height="158" loading="lazy" />
+										</a>
+									</div>
+									<div class="col-6">
+										<a class="gallery__item" href="#" data-source="/vysocina-gladiators/build/ajax-gallery.json" data-gallery-id="1">
+											<img srcset="https://picsum.photos/193/158" alt="photo" width="193" height="158" loading="lazy" />
+										</a>
+									</div>
+									<div class="col-6">
+										<a class="gallery__item" href="#" data-source="/vysocina-gladiators/build/ajax-gallery.json" data-gallery-id="1">
+											<img srcset="https://picsum.photos/193/158" alt="photo" width="193" height="158" loading="lazy" />
+										</a>
+									</div>
+									<div class="col-6">
+										<a class="gallery__item" href="#" data-source="/vysocina-gladiators/build/ajax-gallery.json" data-gallery-id="1">
+											<img srcset="https://picsum.photos/193/158" alt="photo" width="193" height="158" loading="lazy" />
+											<div class="gallery__item-num text-primary">
+												<div class="font-title h2">34</div>
+												<div class="font-body text-regular-md">dalších</div>
+											</div>
+										</a>
+									</div>
+								</div>
+							</div>
+						</div>
+					</div>
+				</div>
+			</section>
+
+		</main>
+		<footer class="footer">
+			<div class="container">
+				<div class="row g-10 flex-wrap justify-content-between position-relative z-1">
+					<div class="col-xl-5">
+						<div class="d-flex align-items-center gap-12 mb-6 justify-content-xl-start justify-content-center">
+							<a href="#" class="footer__logo">
+								<img src="images/content/logo-mobile.png" loading="lazy" alt="logo" width="70" height="92" />
+							</a>
+							<ul class="social">
+								<li>
+									<a href="#" target="_blank" class="social__link">
+										<img height="16" width="17" src="images/ico/fb.svg" loading="lazy" alt="social" />
+									</a>
+								</li>
+								<li>
+									<a href="#" target="_blank" class="social__link">
+										<img width="17" height="16" src="images/ico/instagram.svg" loading="lazy" alt="social" />
+									</a>
+								</li>
+								<li>
+									<a href="#" target="_blank" class="social__link">
+										<img width="24" height="16" src="images/ico/youtube.svg" loading="lazy" alt="social" />
+									</a>
+								</li>
+							</ul>
+						</div>
+						<div class="footer__title">Vysočina Gladiators</div>
+					</div>
+					<div class="col-xl-6 d-sm-block d-none">
+						<div class="row justify-content-between g-6">
+							<div class="col-sm-4">
+								<div class="d-grid gap-6 justify-content-sm-center">
+									<ul class="d-grid gap-2 hover-outline">
+										<li>
+											<a class="font-title text-black-md text-primary fs-italic text-uppercase" href="#">Klub</a>
+										</li>
+										<li>
+											<a class="text-regular-sm text-secondary" href="#">
+												Vedení a kontakty
+											</a>
+										</li>
+										<li>
+											<a class="text-regular-sm text-secondary" href="#">
+												Historie
+											</a>
+										</li>
+										<li>
+											<a class="text-regular-sm text-secondary" href="#">
+												Síň slávy
+											</a>
+										</li>
+										<li>
+											<a class="text-regular-sm text-secondary" href="#">
+												Vizuální identita
+											</a>
+										</li>
+										<li>
+											<a class="text-regular-sm text-secondary" href="#">
+												Glads pomáhají
+											</a>
+										</li>
+										<li>
+											<a class="text-regular-sm text-secondary" href="#">
+												Stadion
+											</a>
+										</li>
+										<li>
+											<a class="text-regular-sm text-secondary" href="#">
+												Akreditace
+											</a>
+										</li>
+										<li>
+											<a class="text-regular-sm text-secondary" href="#"> GDPR </a>
+										</li>
+									</ul>
+									<ul class="d-grid gap-2 hover-outline">
+										<li>
+											<a class="font-title text-black-md text-primary fs-italic text-uppercase" href="#">Média</a>
+										</li>
+										<li>
+											<a class="text-regular-sm text-secondary" href="#" target="_blank">
+												Facebook
+											</a>
+										</li>
+										<li>
+											<a class="text-regular-sm text-secondary" href="#" target="_blank">
+												Instagram
+											</a>
+										</li>
+										<li>
+											<a class="text-regular-sm text-secondary" href="#">
+												Glads v repre
+											</a>
+										</li>
+										<li>
+											<a class="text-regular-sm text-secondary" href="#">
+												Archiv článků
+											</a>
+										</li>
+										<li>
+											<a class="text-regular-sm text-secondary" href="#" target="_blank">
+												CAAF.cz
+											</a>
+										</li>
+									</ul>
+								</div>
+							</div>
+							<div class="col-sm-4">
+								<div class="d-grid gap-6 justify-content-sm-center">
+									<ul class="d-grid gap-2 hover-outline">
+										<li>
+											<a class="font-title text-black-md text-primary fs-italic text-uppercase" href="#">
+												A-tým
+											</a>
+										</li>
+										<li>
+											<a class="text-regular-sm text-secondary" href="#">
+												Soupiska
+											</a>
+										</li>
+										<li>
+											<a class="text-regular-sm text-secondary" href="#">
+												Zápasy
+											</a>
+										</li>
+										<li>
+											<a class="text-regular-sm text-secondary" href="#">
+												Tabulka
+											</a>
+										</li>
+										<li>
+											<a class="text-regular-sm text-secondary" href="#">
+												Statistiky
+											</a>
+										</li>
+										<li>
+											<a class="text-regular-sm text-secondary" href="#">
+												Realizační tým
+											</a>
+										</li>
+										<li>
+											<a class="text-regular-sm text-secondary" href="#">
+												Změny v kádru
+											</a>
+										</li>
+									</ul>
+									<ul class="d-grid gap-2 hover-outline">
+										<li>
+											<a class="font-title text-black-md text-primary fs-italic text-uppercase" href="#">
+												Mládež/Academy
+											</a>
+										</li>
+
+										<li>
+											<a class="text-regular-sm text-secondary" href="#">
+												Tackle U21
+											</a>
+										</li>
+										<li>
+											<a class="text-regular-sm text-secondary" href="#">
+												Tackle U18
+											</a>
+										</li>
+										<li>
+											<a class="text-regular-sm text-secondary" href="#">
+												Flag U15
+											</a>
+										</li>
+										<li>
+											<a class="text-regular-sm text-secondary" href="#">
+												Realizační týmy
+											</a>
+										</li>
+										<li>
+											<a class="text-regular-sm text-secondary" href="#">
+												Nábor hráčů
+											</a>
+										</li>
+									</ul>
+								</div>
+							</div>
+							<div class="col-sm-4">
+								<div class="d-grid gap-6 justify-content-sm-center">
+									<a class="font-title text-black-md text-primary fs-italic text-uppercase hover-outline" href="#">
+										e-shop
+									</a>
+									<a class="font-title text-black-md text-primary fs-italic text-uppercase hover-outline" href="#">
+										Vstupenky
+									</a>
+
+									<ul class="d-grid gap-2 hover-outline">
+										<li>
+											<a class="font-title text-black-md text-primary fs-italic text-uppercase" href="#">
+												Fanzone
+											</a>
+										</li>
+										<li>
+											<a class="text-regular-sm text-secondary" href="#">
+												Fotogalerie
+											</a>
+										</li>
+										<li>
+											<a class="text-regular-sm text-secondary" href="#"> Video </a>
+										</li>
+										<li>
+											<a class="text-regular-sm text-secondary" href="#">
+												Ke stažení
+											</a>
+										</li>
+										<li>
+											<a class="text-regular-sm text-secondary" href="#">
+												JCA Legends
+											</a>
+										</li>
+										<li>
+											<a class="text-regular-sm text-secondary" href="#">
+												Maskot MAX
+											</a>
+										</li>
+										<li>
+											<a class="text-regular-sm text-secondary" href="#">
+												Gameday
+											</a>
+										</li>
+									</ul>
+									<ul class="d-grid gap-2 hover-outline">
+										<li>
+											<a class="font-title text-black-md text-primary fs-italic text-uppercase" href="#">
+												Partneři
+											</a>
+										</li>
+
+										<li>
+											<a class="text-regular-sm text-secondary" href="#">
+												Spolupráce
+											</a>
+										</li>
+										<li>
+											<a class="text-regular-sm text-secondary" href="#">
+												Ke stažení
+											</a>
+										</li>
+										<li>
+											<a class="text-regular-sm text-secondary" href="#">
+												JCA Legends
+											</a>
+										</li>
+										<li>
+											<a class="text-regular-sm text-secondary" href="#">
+												Maskot MAX
+											</a>
+										</li>
+										<li>
+											<a class="text-regular-sm text-secondary" href="#">
+												Gameday
+											</a>
+										</li>
+									</ul>
+								</div>
+							</div>
+						</div>
+					</div>
+				</div>
+				<div class="footer-bottom">
+					<ul class="d-flex gap-lg-10 gap-6 text-regular-xs text-secondary hover-outline flex-wrap justify-content-lg-start justify-content-center">
+						<li>
+							<a href="javascript:void(0);" data-cc="c-settings" aria-haspopup="dialog">
+								Cookies
+							</a>
+						</li>
+						<li>
+							<a href="#">Copyright</a>
+						</li>
+						<li>
+							<a href="#">Fakturační údaje</a>
+						</li>
+						<li>
+							<a href="#">Pristupnost</a>
+						</li>
+						<li>
+							<a href="#">Podmínky použití webu</a>
+						</li>
+						<li>
+							<a href="#">Obchodní podmínky</a>
+						</li>
+					</ul>
+					<div class="d-flex align-items-center gap-3 text-regular-xs text-secondary">
+						Vyrobeno v
+						<a href="#" target="_blank">
+							<img class="object-fit-contain" src="images/ico/esports.svg" width="70" height="21" alt="esports" loading="lazy" />
+						</a>
+						v roce 2025
+					</div>
+				</div>
+			</div>
+		</footer>
+	</div>
+	<script defer src="https://code.jquery.com/jquery-3.6.0.min.js" integrity="sha256-/xUj+3OJU5yExlq6GSYGSHk7tPXikynS7ogEvDej/m4=" crossorigin="anonymous"></script>
+	<script defer src="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/js/bootstrap.bundle.min.js" integrity="sha384-ka7Sk0Gln4gmtz2MlQnikT1wXgYsOg+OMhuP+IlRH9sENBO0LRn5q+8nbTov4+1p" crossorigin="anonymous"></script>
+	<script defer src="js/scripts.js"></script>
+</body>
+
+</html>

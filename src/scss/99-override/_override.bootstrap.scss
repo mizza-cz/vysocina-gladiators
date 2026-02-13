@@ -1,0 +1,86 @@
+/*! purgecss start ignore */
+.container {
+  max-width: 96rem !important;
+  margin: 0 auto;
+  padding: 0 24px;
+  @include media-breakpoint-down(md) {
+    padding: 0 16px;
+  }
+}
+.container-xs {
+  max-width: 740px;
+  margin: 0 auto;
+}
+.font-title {
+  font-family: var(--font-title) !important;
+}
+.font-body {
+  font-family: var(--font-body) !important;
+}
+.font-subtitle {
+  font-family: var(--font-subtitle) !important;
+}
+
+.text-white {
+  color: var(--color-white) !important;
+}
+.text-accent {
+  color: var(--color-accent);
+}
+.text-black {
+  color: var(--color-dark) !important;
+}
+.text-primary {
+  color: var(--color-text-primary) !important;
+}
+.text-secondary {
+  color: var(--color-text-secondary) !important;
+}
+.text-inverse {
+  color: var(--color-inverse);
+}
+.bg-top {
+  background-image: url("../images/content/bg-top.png");
+  background-repeat: no-repeat;
+  background-size: cover;
+  width: 100%;
+  position: relative;
+  height: 100%;
+  background-position: bottom;
+}
+.bg-static {
+  position: relative;
+  z-index: 2;
+  &::before {
+    content: "";
+    position: absolute;
+    background-image: url("../images/content/bg-static.png");
+    background-repeat: no-repeat;
+    background-size: cover;
+    width: 100%;
+    height: 1024px;
+    background-position: top;
+    left: 0;
+    top: 0;
+  }
+}
+.hover-outline,
+.hover-outline a {
+  text-decoration-color: transparent;
+  &:hover {
+    text-decoration-color: inherit;
+  }
+}
+.bg-light {
+  background-color: var(--color-text-primary) !important;
+}
+.bg-inverse {
+  background-color: var(--color-inverse) !important;
+}
+.rounded-16 {
+  border-radius: 16px;
+}
+.fs-italic {
+  font-style: italic;
+}
+/*! purgecss end ignore */

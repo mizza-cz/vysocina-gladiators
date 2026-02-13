@@ -1,0 +1,26 @@
+.btn-light {
+  font-weight: 900;
+  font-style: Italic;
+  font-size: 16px;
+  line-height: 22px;
+  text-align: center;
+  text-transform: uppercase;
+  font-family: var(--font-title);
+  color: var(--color-text-primary);
+  border-radius: 56px;
+  width: fit-content;
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+  border: 1px solid var(--color-text-primary);
+  transition: all 0.3s;
+  background: transparent;
+  height: 48px;
+  padding: 8px 24px;
+  text-decoration-color: transparent;
+  outline: 2px solid transparent;
+  min-width: 128px;
+  &:hover {
+    outline: 2px solid #fafafa;
+  }
+}

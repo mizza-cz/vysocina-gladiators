@@ -1,0 +1,53 @@
+.pubItem {
+  display: block;
+  position: relative;
+  overflow: hidden;
+  border-radius: 16px;
+  aspect-ratio: 448/400;
+  &::before {
+    content: "";
+    position: absolute;
+    width: 508px;
+    height: 214px;
+    left: -38px;
+    top: 222px;
+
+    background: var(--color-accent);
+    border-radius: 50%;
+    opacity: 0.5;
+
+    filter: blur(171.2px);
+    pointer-events: none;
+    z-index: 2;
+  }
+  &:hover {
+    img {
+      transform: scale(1.05);
+    }
+  }
+  img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    transition: all 0.3s;
+  }
+  &__title {
+    position: absolute;
+    padding: 0 24px 28px;
+    font-family: var(--font-subtitle);
+    font-weight: 900;
+    font-style: Italic;
+    font-size: 112px;
+    font-size: clamp(48px, 7.7vw, 112px);
+    line-height: 75%;
+    display: grid;
+    gap: 24px;
+    text-transform: uppercase;
+    bottom: 0;
+    left: 0;
+    width: 100%;
+    color: transparent;
+    -webkit-text-stroke: 1px var(--color-white);
+    z-index: 3;
+  }
+}

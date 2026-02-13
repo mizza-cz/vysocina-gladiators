@@ -1,0 +1,24 @@
+{% extends "@components/base/base.twig" %} {% set title = "01.0_homepage" %} {%
+block main %}
+
+<div class="bg-top">
+  <section class="pb-12 pt-xl-19 pt-16">
+    <div class="container">
+      <div class="row g-xl-6 g-0">
+        <div class="col-xl-8">
+          {% include "@components/heroPosts/heroPosts.twig" %}
+        </div>
+        <div class="col-xl-4">
+          {% include "@components/heroMatch/heroMatch.twig" %}
+        </div>
+      </div>
+    </div>
+  </section>
+</div>
+<div class="bg-inverse">
+  {% include "@components/pub-section/pub-section.twig" %} {% include
+  "@components/hp-statistics/hp-statistics.twig" %} {% include
+  "@components/media-section/media-section.twig" %} {% include
+  "@components/partnersSlider/partnersSlider.twig" %}
+</div>
+{% endblock %}

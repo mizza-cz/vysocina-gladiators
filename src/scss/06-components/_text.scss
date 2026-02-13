@@ -1,0 +1,112 @@
+.o-content h2,
+.h2 {
+  font-family: var(--font-title);
+  font-weight: 700;
+  font-style: Italic;
+  font-size: 56px;
+  line-height: 62px;
+  text-transform: uppercase;
+  @include media-breakpoint-down(lg) {
+    font-size: 36px;
+    line-height: 115%;
+  }
+}
+
+.o-content h3,
+.h3 {
+  font-family: var(--font-title);
+  font-weight: 800;
+  font-style: Italic;
+  font-size: 40px;
+  line-height: 130%;
+  letter-spacing: -0.02em;
+  text-transform: uppercase;
+}
+.o-content h4,
+.h4 {
+  font-family: var(--font-title);
+  font-weight: 800;
+  font-style: Italic;
+  font-size: 32px;
+  line-height: 130%;
+  letter-spacing: -0.02em;
+  text-transform: uppercase;
+  @include media-breakpoint-down(lg) {
+    font-size: 24px;
+    line-height: 115%;
+  }
+}
+
+.o-content h5,
+.h5 {
+  font-family: var(--font-title);
+  font-weight: 800;
+  font-style: Italic;
+  font-size: 24px;
+  line-height: 115%;
+  letter-spacing: -0.02em;
+  text-transform: uppercase;
+  @include media-breakpoint-down(lg) {
+    font-size: 20px;
+  }
+}
+.o-content h6,
+.h6 {
+  font-family: var(--font-title);
+  font-weight: 700;
+  font-style: Italic;
+  font-size: 20px;
+  line-height: 22px;
+  color: var(--color-placeholder);
+}
+
+.perex {
+  font-weight: 700;
+  font-style: Bold;
+  font-size: 16px;
+  line-height: 140%;
+  letter-spacing: -0.01em;
+}
+// text 2XL
+.text-extrabold-2xl {
+  font-weight: 800;
+  font-size: 24px;
+  line-height: 110%;
+  letter-spacing: -0.02em;
+}
+// text XL
+.text-bold-xl {
+  font-weight: 700;
+  font-size: 20px;
+  line-height: 110%;
+}
+// text XS
+
+.text-regular-xs {
+  font-weight: 400;
+  font-size: 12px;
+  line-height: 15px;
+  letter-spacing: -0.05em;
+}
+
+// text SM
+
+.text-regular-sm {
+  font-weight: 400;
+  font-size: 14px;
+  line-height: 22px;
+  letter-spacing: -0.01em;
+}
+
+//  text MD
+.text-black-md {
+  font-weight: 900;
+  font-size: 16px;
+  line-height: 22px;
+}
+.text-regular-md {
+  font-weight: 400;
+  font-size: 1rem;
+  line-height: 140%;
+  letter-spacing: -0.01em;
+}

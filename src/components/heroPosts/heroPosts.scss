@@ -1,0 +1,87 @@
+.heroPosts {
+  position: relative;
+  height: 100%;
+  width: 100%;
+  &__img {
+    width: 100%;
+    border-radius: 16px;
+    height: 100%;
+    position: relative;
+    overflow: hidden;
+    aspect-ratio: 920/704;
+    @include media-breakpoint-down(xl) {
+      height: auto;
+    }
+    @include media-breakpoint-down(md) {
+      aspect-ratio: 386/362;
+    }
+    &::before {
+      content: "";
+      position: absolute;
+      width: 100%;
+      height: 100%;
+      left: 0;
+      bottom: 0;
+      background: linear-gradient(
+        274.18deg,
+        rgba(92, 11, 24, 0.9) 29.56%,
+        rgba(92, 11, 24, 0) 86.33%
+      );
+      @include media-breakpoint-down(xl) {
+        background: linear-gradient(
+            180deg,
+            rgba(211, 31, 60, 0.3) 12.57%,
+            rgba(211, 31, 60, 0) 60.21%
+          ),
+          linear-gradient(348.68deg, #06090e 26.84%, rgba(6, 9, 14, 0) 64.09%);
+      }
+    }
+    img {
+      width: 100%;
+      height: 100%;
+      object-fit: cover;
+    }
+  }
+  &__link {
+    text-decoration-color: transparent;
+    &:hover .h4 {
+      color: var(--color-text-primary);
+    }
+    .h4 {
+      color: var(--color-text-secondary);
+      transition: all 0.3s;
+    }
+  }
+  &__list {
+    display: grid;
+    gap: 40px;
+    @include media-breakpoint-down(lg) {
+      gap: 32px;
+    }
+  }
+  &__content {
+    padding: 40px;
+    position: absolute;
+    top: 0;
+    right: 0;
+
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    height: 100%;
+    gap: 24px;
+    @include media-breakpoint-up(xxl) {
+      max-width: 440px;
+    }
+    @include media-breakpoint-up(xl) {
+      max-width: 540px;
+    }
+    @include media-breakpoint-down(xl) {
+      position: relative;
+      height: auto;
+    }
+    @include media-breakpoint-down(md) {
+      padding: 32px 16px;
+    }
+  }
+}

@@ -1,0 +1,19 @@
+.tags {
+  display: flex;
+  align-items: center;
+  gap: 8px 18px;
+  li {
+    position: relative;
+    display: flex;
+    align-items: center;
+  }
+  li + li::before {
+    content: "";
+    position: absolute;
+    left: -10px;
+    background: var(--color-text-secondary);
+    width: 4px;
+    height: 4px;
+    border-radius: 100%;
+  }
+}

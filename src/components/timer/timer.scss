@@ -1,0 +1,50 @@
+.timer {
+  border-bottom: 1px solid var(--color-border);
+  border-top: 1px solid var(--color-border);
+  padding: 48px 0;
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  margin: 48px 0;
+  @include media-breakpoint-down(xl) {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 4rem;
+  }
+  @include media-breakpoint-down(md) {
+    padding: 32px 0;
+    margin: 32px 0;
+  }
+}
+.timer__item {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  gap: 1rem;
+}
+.timer__value {
+  font-family: var(--font-subtitle);
+  font-weight: 900;
+  font-style: Italic;
+  font-size: 64px;
+  line-height: 56px;
+  text-align: center;
+  text-transform: uppercase;
+  color: var(--color-text-primary);
+  @include media-breakpoint-down(md) {
+    font-size: 40px;
+    line-height: 100%;
+  }
+}
+.timer__label {
+  font-family: var(--font-title);
+  color: var(--color-text-secondary);
+  font-weight: 700;
+  font-style: Italic;
+  font-size: 20px;
+  line-height: 22px;
+  @include media-breakpoint-down(md) {
+    font-size: 18px;
+  }
+}

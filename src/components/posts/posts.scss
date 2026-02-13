@@ -1,0 +1,19 @@
+.posts {
+  position: relative;
+  overflow: visible;
+  .swiper-slide {
+    width: 448px !important;
+    @include media-breakpoint-down(sm) {
+      width: 100% !important;
+    }
+  }
+}
+
+.infinite-scroll-swiper {
+  -webkit-transition-timing-function: linear !important;
+  -o-transition-timing-function: linear !important;
+  transition-timing-function: linear !important;
+}
+.swiper-wrapper {
+  transition-timing-function: linear !important;
+}
