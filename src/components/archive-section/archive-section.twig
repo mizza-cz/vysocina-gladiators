@@ -1,0 +1,59 @@
+<section class="pb-sm-16 pb-10 archive-section bg-inverse">
+  <div class="bg-static pt-29">
+    <div class="container position-relative z-2">
+      <nav class="mb-10" aria-label="breadcrumb">
+        <ol class="breadcrumb">
+          <li class="breadcrumb-item">
+            <a class="hover-outline" href="#">Home</a>
+          </li>
+          <li class="breadcrumb-item">
+            <a class="hover-outline" href="#">Média</a>
+          </li>
+          <li class="breadcrumb-item active" aria-current="page">
+            Archiv článků
+          </li>
+        </ol>
+      </nav>
+      <h1 class="h2 text-primary mb-lg-6 mb-4">Archiv článků</h1>
+
+      <div class="archive-section__wrapper row gx-6 gy-lg-16 gy-8">
+        <div class="col-12">
+          {% include "@components/postFeatured/postFeatured.twig" %}
+        </div>
+        {% for i in 1..6 %}
+        <div class="col-xl-4 col-md-6">
+          {% include "@components/postCard/postCard.twig" %}
+        </div>
+        {% endfor %}
+        <div class="col-xl-6">
+          {% include "@components/postFeatured/postFeatured.twig" %}
+        </div>
+        <div class="col-xl-6">
+          {% include "@components/postFeatured/postFeatured.twig" %}
+        </div>
+        {% for i in 1..6 %}
+        <div class="col-xl-4 col-md-6">
+          {% include "@components/postCard/postCard.twig" %}
+        </div>
+        {% endfor %}
+        <div class="col-12">
+          {% include "@components/postFeatured/postFeatured.twig" %}
+        </div>
+        {% for i in 1..6 %}
+        <div class="col-xl-4 col-md-6">
+          {% include "@components/postCard/postCard.twig" %}
+        </div>
+        {% endfor %}
+      </div>
+      <div class="text-center mt-lg-16 mt-10">
+        <a
+          href="#"
+          class="btn-accent js-loadMore"
+          data-source="/vysocina-gladiators/build/ajax-archive.json"
+        >
+          Načíst další
+        </a>
+      </div>
+    </div>
+  </div>
+</section>
