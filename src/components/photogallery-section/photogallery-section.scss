@@ -1,0 +1,13 @@
+.photogallery-section {
+  .postFeatured {
+    aspect-ratio: 330/360;
+    @include media-breakpoint-up(xl) {
+      min-height: 420px;
+      aspect-ratio: 330/420;
+    }
+  }
+  .postFeatured-content {
+    padding: 0 24px;
+    bottom: 24px;
+  }
+}

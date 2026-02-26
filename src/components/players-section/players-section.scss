@@ -1,0 +1,151 @@
+.playerCard {
+  border: 1px solid var(--color-inverse);
+  border-radius: 24px;
+  overflow: hidden;
+  display: block;
+  text-decoration: none;
+  position: relative;
+  background: #06090e;
+
+  &::before {
+    content: "";
+    position: absolute;
+    left: -15%;
+    right: -15%;
+    bottom: -3.75rem;
+    height: 15rem;
+    background: radial-gradient(
+      ellipse at bottom,
+      rgba(211, 31, 60, 0.75) 0,
+      rgba(211, 31, 60, 0.45) 35%,
+      rgba(211, 31, 60, 0.2) 55%,
+      rgba(211, 31, 60, 0) 75%
+    );
+    -webkit-filter: blur(3rem);
+    filter: blur(0rem);
+    opacity: 1;
+    z-index: 4;
+    pointer-events: none;
+    backdrop-filter: blur(2px);
+  }
+  &__img {
+    width: 100%;
+    position: relative;
+    z-index: 2;
+    transition: all 0.3s;
+    aspect-ratio: 330/427;
+    &::before {
+      content: "";
+      position: absolute;
+      width: 100%;
+      height: 200px;
+      filter: blur(16px);
+      bottom: 0;
+      left: 0;
+      z-index: 5;
+    }
+    img {
+      width: 100%;
+      height: 100%;
+      object-fit: cover;
+      object-position: top;
+      filter: grayscale(100%);
+    }
+  }
+  &__position {
+    position: absolute;
+    top: 16px;
+    z-index: 3;
+    left: 16px;
+    font-weight: 400;
+    font-size: 16px;
+    line-height: 140%;
+    letter-spacing: -0.01em;
+    color: var(--color-text-disabled);
+  }
+  &__number {
+    position: absolute;
+    z-index: 3;
+    left: 24px;
+    top: 44px;
+    font-family: var(--font-subtitle);
+    color: var(--color-accent);
+    font-weight: 900;
+    font-style: Italic;
+    font-size: clamp(80px, 10vw, 112px);
+    line-height: 100%;
+    transform: rotate(-9.4deg);
+  }
+  &__info {
+    position: absolute;
+    bottom: 8px;
+    left: 0;
+    right: 0;
+    z-index: 4;
+    padding: 0 16px;
+    width: 100%;
+    margin-bottom: 16px;
+    transition: transform 0.3s ease-out;
+    transform: translateX(0);
+    display: flex;
+    align-items: center;
+    gap: 8px;
+  }
+  &__hover {
+    position: absolute;
+    bottom: 0;
+    right: 0;
+    left: 0;
+    background-color: rgba(#000, 0.4);
+    transform: translateX(20%);
+    transition: transform 0.3s ease-out, opacity 0.3s ease-out;
+    opacity: 0;
+    z-index: 17;
+    padding: 16px;
+    span {
+      display: block;
+      color: var(--color-text-disabled);
+    }
+    ul {
+      color: var(--color-white);
+      li {
+        padding: 0 12px;
+        font-family: var(--font-title);
+        color: var(--color-primary);
+        font-weight: 800;
+        font-style: Italic;
+        font-size: 24px;
+        line-height: 100%;
+        letter-spacing: -0.02em;
+        text-align: center;
+        text-transform: uppercase;
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        justify-content: center;
+        gap: 8px;
+        @include media-breakpoint-down(lg) {
+          font-size: 22px;
+        }
+        span {
+          display: block;
+          color: var(--color-text-disabled);
+          font-weight: 900;
+          font-size: 16px;
+          line-height: 22px;
+          letter-spacing: 0;
+        }
+      }
+    }
+  }
+}
+
+a.playerCard:hover {
+  .playerCard__hover {
+    transform: translateY(0);
+    opacity: 1;
+  }
+  .playerCard__info {
+    transform: translateY(-4.2rem);
+  }
+}
