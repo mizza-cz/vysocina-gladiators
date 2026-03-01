@@ -1,0 +1,162 @@
+/*! purgecss start ignore */
+.select2-container--default
+  .select2-results__option--highlighted.select2-results__option--selectable {
+  background-color: transparent;
+}
+.select2-container {
+  .select2-selection--single {
+    height: auto;
+    padding: 0.3rem 2.2rem 0.4rem 0.5rem;
+    border-color: var(--color-text-primary);
+    outline: 2px solid var(--color-text-primary);
+    transition: all 0.3s;
+  }
+}
+
+.-error {
+  .select2-container {
+    .select2-selection--single {
+      border-color: var(--color-text-secondary);
+      outline-color: var(--color-text-secondary);
+    }
+  }
+}
+.-disabled {
+  cursor: not-allowed;
+  * {
+    cursor: not-allowed;
+  }
+
+  .select2-container {
+    .select2-selection--single {
+      background-color: var(--color-accent);
+      border-color: #adadad;
+    }
+  }
+}
+
+.select2-dropdown {
+  overflow: hidden;
+  z-index: 99999;
+  border: 0;
+  margin-top: 2px;
+  border-radius: 8px;
+  box-shadow: 0px 2px 4px rgba(0, 0, 0, 0.14), 0px 4px 5px rgba(0, 0, 0, 0.12),
+    0px 1px 10px rgba(0, 0, 0, 0.2);
+}
+.select2-results__options {
+  font-size: 12px;
+  text-transform: uppercase;
+
+  > li {
+    padding: 4px 12px;
+    font-weight: 500;
+    > span {
+      align-items: center;
+      display: flex;
+      width: 100%;
+      img {
+        margin-right: 16px;
+      }
+    }
+  }
+  .select2-results__option--selected {
+    background-color: var(--color-accent) !important;
+    color: var(--color-light);
+  }
+  .select2-results__option--highlighted  {
+    background-color: var(--color-accent) !important;
+  }
+}
+.select2-container .select2-selection--single .select2-selection__rendered {
+  color: var(--color-text-primary);
+  padding: 0;
+  width: 100%;
+  font-family: var(--font-title);
+  font-weight: 900;
+  font-style: Italic;
+  font-size: 16px;
+  line-height: 22px;
+  text-transform: uppercase;
+}
+
+.select2-container--default
+  .select2-selection--single
+  .select2-selection__arrow
+  b {
+  background-image: url("../images/ico/chevron-down.svg");
+  background-repeat: no-repeat;
+  background-size: contain;
+  border: none;
+  width: 32px;
+  height: 32px;
+  position: relative;
+  display: block;
+  right: 0;
+  top: 2px;
+  left: auto;
+}
+.select2-container--default
+  .select2-selection--single
+  .select2-selection__arrow {
+  height: 32px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  width: 32px;
+  right: 0px;
+  top: 0%;
+  transform: none;
+  position: relative;
+}
+.select2-container--default .select2-selection--single {
+  border-radius: 32px;
+  height: 38px;
+  padding: 0 16px;
+  display: flex;
+  align-items: center;
+  min-width: 128px;
+  background: transparent;
+}
+.select2-container--default
+  .select2-selection--single
+  .select2-selection__placeholder {
+  color: var(--color-text-primary);
+}
+
+.select2-results__options > li {
+  padding-top: 6px;
+  padding-bottom: 6px;
+  font-weight: 500;
+  font-style: italic;
+  text-transform: capitalize;
+  color: var(--color-inverse);
+  font-family: var(--font-title);
+}
+.select2-container--default .select2-selection--single {
+  outline: 1px solid transparent;
+}
+.select2-container--default.select2-container--open.select2-container--below
+  .select2-selection--multiple,
+.select2-container--default.select2-container--open.select2-container--below
+  .select2-selection--single {
+  border-radius: 12px 12px 0 0 !important;
+  border: 1px solid var(--color-text-primary);
+  outline: 1px solid var(--color-text-primary);
+}
+.select2-container--default.select2-container--open.select2-container--above
+  .select2-selection--multiple,
+.select2-container--default.select2-container--open.select2-container--above
+  .select2-selection--single {
+  border-radius: 12px 12px 0 0 !important;
+}
+
+.select-primary {
+  .select2-container--default .select2-selection--single {
+    background-color: var(--color-accent) !important;
+  }
+  .select2-container .select2-selection--single .select2-selection__rendered {
+    color: var(--color-inverse);
+  }
+}
+/*! purgecss end ignore */

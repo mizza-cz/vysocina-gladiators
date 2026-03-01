@@ -1,0 +1,57 @@
+<div class="matchBoard">
+  <div class="row g-6 align-items-center">
+    <div class="col-xl-4 col-lg-3">
+      <ul
+        class="text-center d-flex flex-lg-column gap-2 text-secondary text-regular-sm justify-content-center align-items-center"
+      >
+        <li>Stadion Vysočina</li>
+        <li>·</li>
+        <li>5. ledna 2025</li>
+        <li>·</li>
+        <li>17:00</li>
+      </ul>
+    </div>
+    <div class="col-xl-4 col-lg-6">
+      <div class="matchBoard-content">
+        <div class="row justify-content-center flex-nowrap">
+          <div class="col-lg col-sm-auto col">
+            <img
+              class="object-fit-contain mb-3 mx-auto"
+              src="images/content/logo.png"
+              width="64"
+              height="64"
+              alt="team"
+            />
+            <div class="text-primary h6 text-center">Vysočina Gladiators</div>
+          </div>
+          <div class="col-lg col-sm-auto col">
+            <img
+              class="object-fit-contain mb-3 mx-auto"
+              src="images/content/znojmo.png"
+              width="64"
+              height="64"
+              alt="team"
+            />
+            <div class="text-primary h6 text-center">Znojmo Knights</div>
+          </div>
+        </div>
+        {% include "@components/timer/timer.twig" %}
+      </div>
+    </div>
+    <div class="col-xl-4 col-lg-3">
+      <div class="heroMatch__links">
+        <div class="d-flex gap-2">
+          <a href="#" class="btn-light"> vstupenky </a>
+          <a href="#" class="btn-light">preview</a>
+        </div>
+
+        <a
+          class="d-block hover-outline text-accent text-black-md text-uppercase fs-italic font-title mt-10"
+          href="#"
+        >
+          Vstupenky na další zápasy
+        </a>
+      </div>
+    </div>
+  </div>
+</div>

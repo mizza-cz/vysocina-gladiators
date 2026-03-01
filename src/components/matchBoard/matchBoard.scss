@@ -1,0 +1,19 @@
+.matchBoard {
+  border-radius: 1rem;
+  overflow: hidden;
+  position: relative;
+  z-index: 10;
+  background: linear-gradient(90deg, #06090e, #06090e 16%, #d31f3c 400%);
+  padding: 24px;
+
+  .timer {
+    margin-top: 48px;
+    padding-top: 0;
+    margin-bottom: 0;
+    border: none;
+    padding-bottom: 0;
+    @include media-breakpoint-down(md) {
+      margin-top: 24px;
+    }
+  }
+}

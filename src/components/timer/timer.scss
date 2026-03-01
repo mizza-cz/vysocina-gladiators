@@ -22,6 +22,9 @@
   align-items: center;
   justify-content: center;
   gap: 1rem;
+  @include media-breakpoint-down(md) {
+    gap: 0.5rem;
+  }
 }
 .timer__value {
   font-family: var(--font-subtitle);

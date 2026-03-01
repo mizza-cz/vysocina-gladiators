@@ -1,0 +1,213 @@
+<section class="pb-sm-16 pb-10 matches-section bg-inverse">
+  <div class="bg-static pt-29">
+    <div class="container position-relative z-2">
+      <nav class="mb-10" aria-label="breadcrumb">
+        <ol class="breadcrumb">
+          <li class="breadcrumb-item">
+            <a class="hover-outline" href="#">Home</a>
+          </li>
+          <li class="breadcrumb-item">
+            <a class="hover-outline" href="#">A-tým</a>
+          </li>
+          <li class="breadcrumb-item active" aria-current="page">Zápasy</li>
+        </ol>
+      </nav>
+      <div
+        class="mb-lg-12 mb-8 d-flex align-items-center justify-content-between gap-lg-8 gap-6 flex-wrap"
+      >
+        <h1 class="h2 text-primary">Rozpis zápasů</h1>
+        <form class="submitForm w-sm-auto w-100">
+          <select class="js-select" id="year" name="year">
+            <option>2025/26</option>
+            <option>2024/25</option>
+            <option>2023/24</option>
+            <option>2022/23</option>
+            <option>2021/22</option>
+          </select>
+        </form>
+      </div>
+      <ul class="nav nav-tabs d-flex flex-wrap gap-2 mb-lg-10 mb-6">
+        <li class="">
+          <a class="tab active" href="#"> Vše </a>
+        </li>
+        <li class="">
+          <a class="tab" href="#"> Základní část </a>
+        </li>
+        <li class="">
+          <a class="tab" href="#"> Play-off </a>
+        </li>
+        <li class="">
+          <a class="tab" href="#"> přátelské zápasy </a>
+        </li>
+      </ul>
+      <div class="mb-lg-12 mb-8">
+        {% include "@components/matchBoard/matchBoard.twig" %}
+      </div>
+
+      <ul class="nav nav-tabs d-flex flex-wrap gap-2 mb-lg-10 mb-6">
+        <li class="">
+          <a class="tab active" href="#"> Všechny zápasy </a>
+        </li>
+        <li class="">
+          <a class="tab" href="#"> Odehrané </a>
+        </li>
+        <li class="">
+          <a class="tab" href="#"> Budoucí </a>
+        </li>
+      </ul>
+      {% for i in 1..6 %}
+      <div class="matchItem">
+        <div class="matchItem-left">
+          <div class="matchItem__col text-semibold-sm text-secondary">
+            <div>29. 10. 2025 (sobota)</div>
+            <div>18.00 hod</div>
+          </div>
+          <div class="matchItem__col">
+            <div class="matchItem__league">1. Liga</div>
+          </div>
+          <div class="matchItem__col text-secondary">
+            <div class="text-semibold-sm">Matchday 38</div>
+            <div class="text-regular-sm">StadionJihlava</div>
+          </div>
+        </div>
+        <div class="matchItem-right">
+          <a
+            href="#"
+            class="d-flex gap-2 align-items-center justify-content-end text-end hover-outline matchItem__team"
+          >
+            <div class="h6 text-primary">Vysočina Gladiators</div>
+            <img
+              class="object-fit-contain"
+              src="images/content/logo.png"
+              width="48"
+              height="48"
+              loading="lazy"
+              alt="team-1"
+            />
+          </a>
+          <a href="#" class="hover-outline matchItem__result">
+            <div class="text-primary">104</div>
+            <div class="text-accent">:</div>
+            <div class="text-secondary">87</div>
+          </a>
+          <a
+            href="#"
+            class="d-flex gap-2 align-items-center hover-outline matchItem__team"
+          >
+            <img
+              class="object-fit-contain"
+              src="images/content/znojmo.png"
+              width="48"
+              height="48"
+              loading="lazy"
+              alt="team-2"
+            />
+            <div class="h6 text-primary">Znojmo Knights</div>
+          </a>
+        </div>
+      </div>
+      <div class="matchItem">
+        <div class="matchItem-left">
+          <div class="matchItem__col text-semibold-sm text-secondary">
+            <div>9. 1. 2025 (sobota)</div>
+            <div>18.00 hod</div>
+          </div>
+          <div class="matchItem__col">
+            <div class="matchItem__league">Extraliga</div>
+          </div>
+          <div class="matchItem__col text-secondary">
+            <div class="text-semibold-sm">Matchday 38</div>
+            <div class="text-regular-sm">Stadion Jssihlava</div>
+          </div>
+        </div>
+        <div class="matchItem-right">
+          <a
+            href="#"
+            class="hover-outline d-flex gap-2 align-items-center justify-content-end text-end matchItem__team"
+          >
+            <div class="h6 text-primary">VysočinaGladiators</div>
+            <img
+              class="object-fit-contain"
+              src="images/content/logo.png"
+              width="48"
+              height="48"
+              loading="lazy"
+              alt="team-1"
+            />
+          </a>
+          <a href="#" class="hover-outline matchItem__result">
+            <div class="text-primary">13</div>
+            <div class="text-accent">:</div>
+            <div class="text-secondary">22</div>
+          </a>
+          <a
+            href="#"
+            class="hover-outline d-flex gap-2 align-items-center matchItem__team"
+          >
+            <img
+              class="object-fit-contain"
+              src="images/content/znojmo.png"
+              width="48"
+              height="48"
+              loading="lazy"
+              alt="team-2"
+            />
+            <div class="h6 text-primary">Znojmo KnightsKnights</div>
+          </a>
+        </div>
+      </div>
+      <div class="matchItem">
+        <div class="matchItem-left">
+          <div class="matchItem__col text-semibold-sm text-secondary">
+            <div>9. 1. 2025 (sobota)</div>
+            <div>18.00 hod</div>
+          </div>
+          <div class="matchItem__col">
+            <div class="matchItem__league">Extraliga</div>
+          </div>
+          <div class="matchItem__col text-secondary">
+            <div class="text-semibold-sm">Matchday 38134</div>
+            <div class="text-regular-sm">StadionStadion Jssihlava</div>
+          </div>
+        </div>
+
+        <div class="matchItem-right">
+          <a
+            href="#"
+            class="hover-outline d-flex gap-2 align-items-center justify-content-end text-end matchItem__team"
+          >
+            <div class="h6 text-primary">VysočinaGladiators</div>
+            <img
+              class="object-fit-contain"
+              src="images/content/logo.png"
+              width="48"
+              height="48"
+              loading="lazy"
+              alt="team-1"
+            />
+          </a>
+          <a href="#" class="hover-outline matchItem__result">
+            <div class="text-primary">13</div>
+            <div class="text-accent">:</div>
+            <div class="text-secondary">22</div>
+          </a>
+          <a
+            href="#"
+            class="hover-outline d-flex gap-2 align-items-center matchItem__team"
+          >
+            <img
+              class="object-fit-contain"
+              src="images/content/znojmo.png"
+              width="48"
+              height="48"
+              loading="lazy"
+              alt="team-2"
+            />
+            <div class="h6 text-primary">Znojmo KnightsKnights</div>
+          </a>
+        </div>
+      </div>
+      {% endfor %}
+    </div>
+  </div>
+</section>

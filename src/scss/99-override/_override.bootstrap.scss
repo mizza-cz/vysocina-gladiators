@@ -39,6 +39,9 @@
 .text-inverse {
   color: var(--color-inverse);
 }
+.text-placeholder{
+  color: var(--color-placeholder) !important;
+}
 .bg-top {
   background-image: url("../images/content/bg-top.png");
   background-repeat: no-repeat;
