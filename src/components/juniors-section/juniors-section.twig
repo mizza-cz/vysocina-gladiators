@@ -1,0 +1,132 @@
+<section class="pb-sm-16 pb-10 juniors-section bg-inverse">
+  <div class="bg-static pt-29">
+    <div class="container position-relative z-2">
+      <nav class="mb-10" aria-label="breadcrumb">
+        <ol class="breadcrumb">
+          <li class="breadcrumb-item">
+            <a class="hover-outline" href="#">Home</a>
+          </li>
+          <li class="breadcrumb-item active" aria-current="page">Mládež</li>
+        </ol>
+      </nav>
+      <div
+        class="mb-lg-12 mb-8 d-flex align-items-center justify-content-between gap-lg-8 gap-6 flex-wrap"
+      >
+        <h1 class="h2 text-primary">Mládež</h1>
+        <form class="submitForm w-sm-auto w-100">
+          <select class="js-select" id="year" name="year">
+            <option>2025/26</option>
+            <option>2024/25</option>
+            <option>2023/24</option>
+            <option>2022/23</option>
+            <option>2021/22</option>
+          </select>
+        </form>
+      </div>
+      <div class="row g-6">
+        <div class="col-lg-4 col-sm-6">
+          <div class="juniorsCard">
+            <img
+              class="juniorsCard__img"
+              src="images/content/post.png"
+              loading="lazy"
+              alt="img"
+            />
+            <div class="juniorsCard__content">
+              <div class="juniorsCard__title">
+                <span class="juniorsCard__title-outline">Tackle</span>
+                <span class="juniorsCard__title-solid">U21</span>
+              </div>
+              <ul class="juniorsCard__list">
+                <li>
+                  <a class="btn-light" href="#">Zápasy</a>
+                </li>
+                <li>
+                  <a class="btn-light" href="#">Soupiska</a>
+                </li>
+                <li>
+                  <a class="btn-light" href="#">Tabulka</a>
+                </li>
+                <li>
+                  <a class="btn-light" href="#">Statistiky</a>
+                </li>
+              </ul>
+            </div>
+          </div>
+        </div>
+        <div class="col-lg-4 col-sm-6">
+          <div class="juniorsCard">
+            <img
+              class="juniorsCard__img"
+              src="images/content/post.png"
+              loading="lazy"
+              alt="img"
+            />
+            <div class="juniorsCard__content">
+              <div class="juniorsCard__title">
+                <span class="juniorsCard__title-outline">Tackle</span>
+                <span class="juniorsCard__title-solid">U18</span>
+              </div>
+              <ul class="juniorsCard__list">
+                <li>
+                  <a class="btn-light" href="#">Zápasy</a>
+                </li>
+                <li>
+                  <a class="btn-light" href="#">Soupiska</a>
+                </li>
+                <li>
+                  <a class="btn-light" href="#">Tabulka</a>
+                </li>
+                <li>
+                  <a class="btn-light" href="#">Statistiky</a>
+                </li>
+              </ul>
+            </div>
+          </div>
+        </div>
+        <div class="col-lg-4 col-sm-6">
+          <div class="juniorsCard">
+            <img
+              class="juniorsCard__img"
+              src="images/content/post.png"
+              loading="lazy"
+              alt="img"
+            />
+            <div class="juniorsCard__content">
+              <div class="juniorsCard__title">
+                <span class="juniorsCard__title-outline">Flag</span>
+                <span class="juniorsCard__title-solid">U15</span>
+              </div>
+              <ul class="juniorsCard__list">
+                <li>
+                  <a class="btn-light" href="#">Zápasy</a>
+                </li>
+                <li>
+                  <a class="btn-light" href="#">Soupiska</a>
+                </li>
+                <li>
+                  <a class="btn-light" href="#">Tabulka</a>
+                </li>
+                <li>
+                  <a class="btn-light" href="#">Statistiky</a>
+                </li>
+              </ul>
+            </div>
+          </div>
+        </div>
+      </div>
+      <div class="py-lg-16 py-8">
+        <h6 class="h5 text-secondary mb-lg-6 mb-4">články</h6>
+        <div class="swiper posts">
+          <ul role="list" class="swiper-wrapper infinite-scroll-swiper">
+            {% for i in 1..6 %}
+            <li class="swiper-slide">
+              {% include "@components/postCard/postCard.twig" %}
+            </li>
+            {% endfor %}
+          </ul>
+        </div>
+      </div>
+    </div>
+  </div>
+</section>

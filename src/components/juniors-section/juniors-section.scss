@@ -1,0 +1,75 @@
+.juniorsCard {
+  position: relative;
+
+  aspect-ratio: 448/574;
+  width: 100%;
+  min-height: 420px;
+  border-radius: 16px;
+  overflow: hidden;
+  height: 100%;
+  background-image: linear-gradient(
+      92.94deg,
+      rgba(211, 31, 60, 0.3) 11.99%,
+      rgba(211, 31, 60, 0) 70.47%
+    ),
+    linear-gradient(354.01deg, rgba(6, 9, 14, 0.9) 101.29%, rgba(6, 9, 14, 0) 0);
+
+  @include media-breakpoint-down(sm) {
+    aspect-ratio: 448/448;
+  }
+  &__img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    position: relative;
+    z-index: -1;
+  }
+  &__content {
+    position: absolute;
+    top: 0;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    align-items: center;
+    text-align: center;
+    height: 100%;
+    gap: 32px;
+    padding: 48px 24px;
+    width: 100%;
+  }
+  &__list {
+    max-width: 272px;
+    width: 100%;
+    margin: 0 auto;
+    display: flex;
+    flex-direction: column;
+    gap: 8px;
+    .btn-light {
+      width: 100%;
+    }
+  }
+}
+
+.juniorsCard__title {
+  font-family: var(--font-subtitle);
+  font-weight: 900;
+  font-style: italic;
+  font-size: clamp(68px, 8vw, 112px);
+  line-height: 0.65;
+  text-transform: uppercase;
+  text-align: center;
+}
+
+.juniorsCard__title span {
+  display: block;
+}
+
+.juniorsCard__title-outline {
+  color: transparent;
+  -webkit-text-stroke: 2px #ffffff;
+  text-stroke: 2px #ffffff;
+}
+
+.juniorsCard__title-solid {
+  color: #d9d9d9;
+}
