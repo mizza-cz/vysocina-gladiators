@@ -1,0 +1,24 @@
+{% extends "@components/base/base.twig" %} {% set title = "13.0_player-detail"
+%} {% block main %}
+<section class="pb-sm-16 pb-10 pt-29 player-profile">
+  <div class="container">
+    <nav class="mb-10" aria-label="breadcrumb">
+      <ol class="breadcrumb">
+        <li class="breadcrumb-item">
+          <a class="hover-outline" href="#">Home</a>
+        </li>
+        <li class="breadcrumb-item">
+          <a class="hover-outline" href="#">A-tým</a>
+        </li>
+        <li class="breadcrumb-item">
+          <a class="hover-outline" href="#">Soupiska</a>
+        </li>
+        <li class="breadcrumb-item active" aria-current="page">Detail hráče</li>
+      </ol>
+    </nav>
+  </div>
+  {% include "@components/player-profile/player-profile.twig" %} {% include
+  "@components/player-content/player-content.twig" %}
+  
+</section>
+{% endblock %}
