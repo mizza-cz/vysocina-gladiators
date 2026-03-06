@@ -28,8 +28,8 @@
     align-items: center;
     justify-content: center;
     @include media-breakpoint-down(lg) {
-      font-size: 13px;
-      padding: 8px 12px;
+      font-size: 12px;
+      padding: 8px 10px;
       height: 34px;
     }
     &:hover {

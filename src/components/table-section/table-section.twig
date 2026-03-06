@@ -1,0 +1,106 @@
+<section class="pb-sm-16 pb-10 table-section bg-inverse">
+  <div class="bg-static pt-29">
+    <div class="container position-relative z-2">
+      <nav class="mb-10" aria-label="breadcrumb">
+        <ol class="breadcrumb">
+          <li class="breadcrumb-item">
+            <a class="hover-outline" href="#">Home</a>
+          </li>
+          <li class="breadcrumb-item">
+            <a class="hover-outline" href="#">A-tým</a>
+          </li>
+          <li class="breadcrumb-item active" aria-current="page">Tabulka</li>
+        </ol>
+      </nav>
+      <div
+        class="mb-lg-12 mb-8 d-flex align-items-center justify-content-between gap-lg-8 gap-6 flex-wrap"
+      >
+        <h1 class="h2 text-primary">Tabulka</h1>
+        <form class="submitForm w-sm-auto w-100">
+          <select class="js-select" id="year" name="year">
+            <option>2025/26</option>
+            <option>2024/25</option>
+            <option>2023/24</option>
+            <option>2022/23</option>
+            <option>2021/22</option>
+          </select>
+        </form>
+      </div>
+      <ul class="nav nav-tabs d-flex flex-wrap gap-2 mb-7">
+        <li class="">
+          <a class="tab active" href="#"> Vše </a>
+        </li>
+        <li class="">
+          <a class="tab" href="#"> Základní část </a>
+        </li>
+        <li class="">
+          <a class="tab" href="#"> Play-off </a>
+        </li>
+      </ul>
+      <div class="table-responsive table-section__content">
+        <table>
+          <thead>
+            <tr>
+              <th class="text-center" style="width: 64px">#</th>
+              <th class="text-start">Tým</th>
+              <th class="text-center" style="width: 64px">Z</th>
+              <th class="text-center" style="width: 64px">V</th>
+              <th class="text-center" style="width: 64px">R</th>
+              <th class="text-center" style="width: 64px">P</th>
+              <th class="text-center" style="width: 120px">CB</th>
+              <th class="text-center" style="width: 120px">PCT</th>
+            </tr>
+          </thead>
+          <tbody>
+            {% for i in 1..5 %}
+            <tr>
+              <td class="text-center">1</td>
+              <td class="text-start">
+                <a href="#" class="team">
+                  <img
+                    class="object-fit-contain"
+                    src="images/content/logo.png"
+                    loading="lazy"
+                    width="32"
+                    height="32"
+                    alt="logo"
+                  />
+                  Vysočina Gladiators
+                </a>
+              </td>
+              <td class="text-center">17</td>
+              <td class="text-center">16</td>
+              <td class="text-center">13</td>
+              <td class="text-center">0</td>
+              <td class="text-center">401:311</td>
+              <td class="text-center">0.824</td>
+            </tr>
+            <tr>
+              <td class="text-center">2</td>
+              <td class="text-start">
+                <a href="#" class="team">
+                  <img
+                    class="object-fit-contain"
+                    src="images/content/znojmo.png"
+                    loading="lazy"
+                    width="32"
+                    height="32"
+                    alt="logo"
+                  />
+                  Znojmo Knights
+                </a>
+              </td>
+              <td class="text-center">13</td>
+              <td class="text-center">12</td>
+              <td class="text-center">10</td>
+              <td class="text-center">9</td>
+              <td class="text-center">384:281</td>
+              <td class="text-center">0.391</td>
+            </tr>
+            {% endfor %}
+          </tbody>
+        </table>
+      </div>
+    </div>
+  </div>
+</section>

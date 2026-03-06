@@ -1,0 +1,328 @@
+<section class="pb-sm-16 pb-10 statistics-section bg-inverse">
+  <div class="bg-static pt-29">
+    <div class="container position-relative z-2">
+      <nav class="mb-10" aria-label="breadcrumb">
+        <ol class="breadcrumb">
+          <li class="breadcrumb-item">
+            <a class="hover-outline" href="#">Home</a>
+          </li>
+          <li class="breadcrumb-item">
+            <a class="hover-outline" href="#">A-tým</a>
+          </li>
+          <li class="breadcrumb-item active" aria-current="page">Statistiky</li>
+        </ol>
+      </nav>
+      <div
+        class="mb-lg-12 mb-8 d-flex align-items-center justify-content-between gap-lg-8 gap-6 flex-wrap"
+      >
+        <h1 class="h2 text-primary">Statistiky</h1>
+        <form class="submitForm w-sm-auto w-100">
+          <select class="js-select" id="year" name="year">
+            <option>2025/26</option>
+            <option>2024/25</option>
+            <option>2023/24</option>
+            <option>2022/23</option>
+            <option>2021/22</option>
+          </select>
+        </form>
+      </div>
+
+      <ul class="nav nav-tabs d-flex flex-wrap gap-2 mb-7">
+        <li class="">
+          <a class="tab active" data-toggle="tab" href="#offense"> Offense </a>
+        </li>
+        <li class="">
+          <a class="tab" data-toggle="tab" href="#defense"> Defense </a>
+        </li>
+      </ul>
+      <div class="tab-content">
+        <div class="tab-pane in active" id="offense">
+          <div
+            class="text-black-md fs-italic text-primary font-title text-uppercase mb-4"
+          >
+            Passing
+          </div>
+          <div class="table-responsive statistics-section__content mb-8">
+            <table>
+              <thead>
+                <tr>
+                  <th class="text-center" style="width: 64px">#</th>
+                  <th class="text-start">Hráč</th>
+                  <th class="text-center" style="width: 120px">Zápasy</th>
+                  <th class="text-center" style="width: 32px"></th>
+                  <th class="text-center" style="width: 120px">C/ATT</th>
+                  <th class="text-center" style="width: 120px">YDS</th>
+                  <th class="text-center" style="width: 120px">AVG</th>
+                  <th class="text-center" style="width: 120px">TD</th>
+                  <th class="text-center" style="width: 120px">INT</th>
+                </tr>
+              </thead>
+              <tbody>
+                {% for i in 1..2 %}
+                <tr>
+                  <td class="text-center">12</td>
+                  <td class="text-start">
+                    <a
+                      href="#"
+                      class="text-semibold-sm text-primary mb-2 d-block"
+                    >
+                      Jan Dunovský
+                    </a>
+                    <div class="text-regular-xs text-secondary">
+                      Offensive Tackle
+                    </div>
+                  </td>
+                  <td class="text-center">5</td>
+                  <td class="text-center">
+                    <span class="table-decore"></span>
+                  </td>
+                  <td class="text-center">16</td>
+                  <td class="text-center">17</td>
+                  <td class="text-center">13</td>
+                  <td class="text-center">14</td>
+                  <td class="text-center">0</td>
+                </tr>
+                <tr>
+                  <td class="text-center">15</td>
+                  <td class="text-start">
+                    <a
+                      href="#"
+                      class="text-semibold-sm text-primary mb-2 d-block"
+                    >
+                      Miroslav Koudela
+                    </a>
+                    <div class="text-regular-xs text-secondary">
+                      Offensive Tackle
+                    </div>
+                  </td>
+                  <td class="text-center">13</td>
+                  <td class="text-center">
+                    <span class="table-decore"></span>
+                  </td>
+                  <td class="text-center">12</td>
+                  <td class="text-center">10</td>
+                  <td class="text-center">9</td>
+                  <td class="text-center">3</td>
+                  <td class="text-center">1</td>
+                </tr>
+                {% endfor %}
+              </tbody>
+            </table>
+          </div>
+          <div
+            class="text-black-md fs-italic text-primary font-title text-uppercase mb-4"
+          >
+            Rushing
+          </div>
+          <div class="table-responsive statistics-section__content mb-8">
+            <table>
+              <thead>
+                <tr>
+                  <th class="text-center" style="width: 64px">#</th>
+                  <th class="text-start">Hráč</th>
+                  <th class="text-center" style="width: 120px">Zápasy</th>
+                  <th class="text-center" style="width: 32px"></th>
+                  <th class="text-center" style="width: 120px">ATT</th>
+                  <th class="text-center" style="width: 120px">YDS</th>
+                  <th class="text-center" style="width: 120px">AVG</th>
+                  <th class="text-center" style="width: 120px">TD</th>
+                </tr>
+              </thead>
+              <tbody>
+                {% for i in 1..2 %}
+                <tr>
+                  <td class="text-center">12</td>
+                  <td class="text-start">
+                    <a
+                      href="#"
+                      class="text-semibold-sm text-primary mb-2 d-block"
+                    >
+                      Jan Dunovský
+                    </a>
+                    <div class="text-regular-xs text-secondary">
+                      Offensive Tackle
+                    </div>
+                  </td>
+                  <td class="text-center">5</td>
+                  <td class="text-center">
+                    <span class="table-decore"></span>
+                  </td>
+                  <td class="text-center">16</td>
+                  <td class="text-center">17</td>
+                  <td class="text-center">13</td>
+                  <td class="text-center">14</td>
+                </tr>
+                <tr>
+                  <td class="text-center">15</td>
+                  <td class="text-start">
+                    <a
+                      href="#"
+                      class="text-semibold-sm text-primary mb-2 d-block"
+                    >
+                      Miroslav Koudela
+                    </a>
+                    <div class="text-regular-xs text-secondary">
+                      Offensive Tackle
+                    </div>
+                  </td>
+                  <td class="text-center">13</td>
+                  <td class="text-center">
+                    <span class="table-decore"></span>
+                  </td>
+                  <td class="text-center">12</td>
+                  <td class="text-center">10</td>
+                  <td class="text-center">9</td>
+                  <td class="text-center">0.391</td>
+                </tr>
+                {% endfor %}
+              </tbody>
+            </table>
+          </div>
+          <div
+            class="text-black-md fs-italic text-primary font-title text-uppercase mb-4"
+          >
+            Receiving
+          </div>
+          <div class="table-responsive statistics-section__content">
+            <table>
+              <thead>
+                <tr>
+                  <th class="text-center" style="width: 64px">#</th>
+                  <th class="text-start">Hráč</th>
+                  <th class="text-center" style="width: 120px">Zápasy</th>
+                  <th class="text-center" style="width: 32px"></th>
+                  <th class="text-center" style="width: 120px">REC</th>
+                  <th class="text-center" style="width: 120px">YDS</th>
+                  <th class="text-center" style="width: 120px">AVG</th>
+                  <th class="text-center" style="width: 120px">TD</th>
+                </tr>
+              </thead>
+              <tbody>
+                {% for i in 1..2 %}
+                <tr>
+                  <td class="text-center">12</td>
+                  <td class="text-start">
+                    <a
+                      href="#"
+                      class="text-semibold-sm text-primary mb-2 d-block"
+                    >
+                      Jan Dunovský
+                    </a>
+                    <div class="text-regular-xs text-secondary">
+                      Offensive Tackle
+                    </div>
+                  </td>
+                  <td class="text-center">5</td>
+                  <td class="text-center">
+                    <span class="table-decore"></span>
+                  </td>
+                  <td class="text-center">16</td>
+                  <td class="text-center">17</td>
+                  <td class="text-center">13</td>
+                  <td class="text-center">14</td>
+                </tr>
+                <tr>
+                  <td class="text-center">15</td>
+                  <td class="text-start">
+                    <a
+                      href="#"
+                      class="text-semibold-sm text-primary mb-2 d-block"
+                    >
+                      Miroslav Koudela
+                    </a>
+                    <div class="text-regular-xs text-secondary">
+                      Offensive Tackle
+                    </div>
+                  </td>
+                  <td class="text-center">13</td>
+                  <td class="text-center">
+                    <span class="table-decore"></span>
+                  </td>
+                  <td class="text-center">12</td>
+                  <td class="text-center">10</td>
+                  <td class="text-center">9</td>
+                  <td class="text-center">0.391</td>
+                </tr>
+                {% endfor %}
+              </tbody>
+            </table>
+          </div>
+        </div>
+        <div class="tab-pane fade" id="defense">
+          <div
+            class="text-black-md fs-italic text-primary font-title text-uppercase mb-4"
+          >
+            Defense
+          </div>
+          <div class="table-responsive statistics-section__content mb-8">
+            <table>
+              <thead>
+                <tr>
+                  <th class="text-center" style="width: 64px">#</th>
+                  <th class="text-start">Hráč</th>
+                  <th class="text-center" style="width: 120px">Zápasy</th>
+                  <th class="text-center" style="width: 32px"></th>
+                  <th class="text-center" style="width: 120px">Tackles</th>
+                  <th class="text-center" style="width: 120px">Solo</th>
+                  <th class="text-center" style="width: 120px">TFL</th>
+                  <th class="text-center" style="width: 120px">sack</th>
+                  <th class="text-center" style="width: 120px">TURNOVERS</th>
+                </tr>
+              </thead>
+              <tbody>
+                {% for i in 1..6 %}
+                <tr>
+                  <td class="text-center">12</td>
+                  <td class="text-start">
+                    <a
+                      href="#"
+                      class="text-semibold-sm text-primary mb-2 d-block"
+                    >
+                      Jan Dunovský
+                    </a>
+                    <div class="text-regular-xs text-secondary">
+                      Offensive Tackle
+                    </div>
+                  </td>
+                  <td class="text-center">5</td>
+                  <td class="text-center">
+                    <span class="table-decore"></span>
+                  </td>
+                  <td class="text-center">16</td>
+                  <td class="text-center">17</td>
+                  <td class="text-center">13</td>
+                  <td class="text-center">14</td>
+                  <td class="text-center">0</td>
+                </tr>
+                <tr>
+                  <td class="text-center">15</td>
+                  <td class="text-start">
+                    <a
+                      href="#"
+                      class="text-semibold-sm text-primary mb-2 d-block"
+                    >
+                      Miroslav Koudela
+                    </a>
+                    <div class="text-regular-xs text-secondary">
+                      Offensive Tackle
+                    </div>
+                  </td>
+                  <td class="text-center">13</td>
+                  <td class="text-center">
+                    <span class="table-decore"></span>
+                  </td>
+                  <td class="text-center">12</td>
+                  <td class="text-center">10</td>
+                  <td class="text-center">9</td>
+                  <td class="text-center">3</td>
+                  <td class="text-center">1</td>
+                </tr>
+                {% endfor %}
+              </tbody>
+            </table>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+</section>
